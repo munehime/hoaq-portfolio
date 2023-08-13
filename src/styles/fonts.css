@@ -1,0 +1,21 @@
+@font-face {
+    font-family: "Karla";
+    src: url("/assets/fonts/Karla-Italic-VariableFont_wght.ttf") format("truetype");
+    font-weight: 200 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Karla";
+    src: url("/assets/fonts/Karla-VariableFont_wght.ttf") format("truetype");
+    font-weight: 200 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Fira Mono";
+    src: url("/assets/fonts/FiraMono-Regular.ttf") format("truetype"),
+        url("/assets/fonts/FiraMono-Medium.ttf") format("truetype"),
+        url("/assets/fonts/FiraMono-Bold.ttf") format("truetype");
+    font-weight: 200 700;
+}

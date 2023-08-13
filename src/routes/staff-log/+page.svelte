@@ -1,0 +1,32 @@
+<script lang="ts">
+    import TournamentsView from "$lib/components/staff-log/TournamentsView.svelte";
+
+    export let data;
+</script>
+
+<svelte:head>
+    <title>staff log | Hoaq</title>
+    <meta name="description" content="Hi, I'm Hoaq" />
+</svelte:head>
+
+<main>
+    <div class="flex flex-col min-h-screen justify-center items-center px-12 sm:px-24 py-20">
+        <div class="w-full max-w-[1625px] flex flex-col justify-between items-start">
+            <div class="flex flex-col gap-4 justify-between items-start">
+                <div>
+                    <div class="px-3 py-1 text-4xl font-bold text-white">Staff log</div>
+                    <div class="px-3 py-1 text-xl text-[#bdc1c6]">
+                        Tracker of everything I’ve done as a tournament staff
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col gap-4 justify-between items-start w-full mt-2 px-2">
+                <div class="w-full">
+                    <div class="pt-12">
+                        <TournamentsView tournamentYears={data.tournaments} />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
