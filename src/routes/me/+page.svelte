@@ -35,7 +35,12 @@
 
 <svelte:head>
     <title>me | Hoaq</title>
-    <meta name="description" content="Hi, I'm Hoaq"/>
+    <meta name="description" content="Hi, I'm Hoaq" />
+    <meta property="og:title" content="me | Hoaq" />
+    <meta property="og:url" content="https://hoaq.id.vn/me" />
+    <meta property="og:description" content="Hi, I'm Hoaq" />
+    <meta property="twitter:title" content="me | Hoaq" />
+    <meta property="twitter:description" content="Hi, I'm Hoaq" />
 </svelte:head>
 
 <main>

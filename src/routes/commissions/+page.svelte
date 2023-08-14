@@ -20,7 +20,12 @@
 
 <svelte:head>
     <title>commissions | Hoaq</title>
-    <meta name="description" content="Hi, I'm Hoaq"/>
+    <meta name="description" content="Hi, I'm Hoaq" />
+    <meta property="og:title" content="commissions | Hoaq" />
+    <meta property="og:url" content="https://hoaq.id.vn/commissions" />
+    <meta property="og:description" content="Hi, I'm Hoaq" />
+    <meta property="twitter:title" content="commissions | Hoaq" />
+    <meta property="twitter:description" content="Hi, I'm Hoaq" />
 </svelte:head>
 
 <main>

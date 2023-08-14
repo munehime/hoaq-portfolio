@@ -7,6 +7,11 @@
 <svelte:head>
     <title>staff log | Hoaq</title>
     <meta name="description" content="Hi, I'm Hoaq" />
+    <meta property="og:title" content="staff log | Hoaq" />
+    <meta property="og:url" content="https://hoaq.id.vn/staff-log" />
+    <meta property="og:description" content="Hi, I'm Hoaq" />
+    <meta property="twitter:title" content="staff log | Hoaq" />
+    <meta property="twitter:description" content="Hi, I'm Hoaq" />
 </svelte:head>
 
 <main>
