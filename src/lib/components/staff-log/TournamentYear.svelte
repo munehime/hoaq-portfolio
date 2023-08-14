@@ -19,7 +19,7 @@
         class="flex justify-between w-full pb-2 border-b-4 border-b-[#bdc1c6]"
         on:click={handleOnClick}
     >
-        <div class="flex items-center gap-3">
+        <div class="flex items-center gap-3 text-left">
             <div
                 class={"flex items-center transition-all duration-200 " + (isOpen ? "rotate-90" : "rotate-0")}>
                 <FontAwesomeIcon
@@ -27,18 +27,18 @@
                     class="w-3 h-3 text-white"
                 />
             </div>
-            <span class="font-bold text-lg">
+            <div class="font-bold text-lg">
                 {tournamentYear.year}
-            </span>
+            </div>
         </div>
         <div
-            class="text-lg">{`${tournamentYear.statistics.roles} roles in ${tournamentYear.statistics.tournaments} tournaments`}</div>
+            class="text-lg text-right">{`${tournamentYear.statistics.roles} roles in ${tournamentYear.statistics.tournaments} tournaments`}</div>
     </button>
     <div class={"overflow-hidden transition-all duration-200" + (isOpen ? "" : " hidden")}>
         <ul class="grid grid-cols-1 xl:grid-cols-2 min-[1625px]:grid-cols-3 gap-5 pt-4">
             {#each tournamentYear.tournaments as tournament (tournament.acronym)}
                 <li>
-                    <div class="grid grid-cols-[28px_minmax(0,_1fr)_146px] bg-[#1e1e1e]">
+                    <div class="grid grid-cols-[28px_minmax(0,_1fr)_90px] sm:grid-cols-[28px_minmax(0,_1fr)_146px] bg-[#1e1e1e]">
                         <div class={
                             "relative rotate-180 h-full pl-0.5" + (tournament.status === "Concluded"
                                                                     ? " bg-[#bdc1c6]"
@@ -82,17 +82,17 @@
                                             rel="noopener noreferrer"
                                         >
                                             <div class="flex items-center gap-1.5 px-1 py-0.5">
-                                                <BadgeIcon class="w-5 h-5 fill-white" />
-                                                <div class="text-sm">Badged</div>
+                                                <BadgeIcon class="w-3 sm:w-5 h-3 sm:h-5 fill-white" />
+                                                <div class="text-xs sm:text-sm break-words">Badged</div>
                                             </div>
                                         </a>
                                     {:else}
                                         <div class="flex items-center gap-1.5 px-1 py-0.5">
-                                            <BadgeIcon class="w-5 h-5 fill-white" />
+                                            <BadgeIcon class="w-3 sm:w-5 h-3 sm:h-5 fill-white" />
                                             {#if tournament.badge_url === "none"}
-                                                <div class="text-sm">No Badge</div>
+                                                <div class="text-xs sm:text-sm break-words">No Badge</div>
                                             {:else}
-                                                <div class="text-sm">Badge Pending</div>
+                                                <div class="text-xs sm:text-sm break-words">Badge Pending</div>
                                             {/if}
                                         </div>
                                     {/if}
@@ -104,8 +104,8 @@
                                         rel="noopener noreferrer"
                                     >
                                         <div class="flex items-center gap-1.5 px-1 py-0.5">
-                                            <OsuIcon class="w-5 h-5 fill-white" />
-                                            <div class="text-sm">Forum Post</div>
+                                            <OsuIcon class="w-3 sm:w-5 h-3 sm:h-5 fill-white" />
+                                            <div class="text-xs sm:text-sm break-words">Forum Post</div>
                                         </div>
                                     </a>
                                 </li>
@@ -119,8 +119,8 @@
                                             <div
                                                 class="flex items-center gap-1.5 px-1 py-0.5">
                                                 <SpreadsheetIcon
-                                                    class="w-5 h-5 fill-white" />
-                                                <div class="text-sm">Spreadsheet</div>
+                                                    class="w-2 sm:w-5 h-2 sm:h-5 fill-white" />
+                                                <div class="text-xs sm:text-sm break-all">Spreadsheet</div>
                                             </div>
                                         </a>
                                     </li>
