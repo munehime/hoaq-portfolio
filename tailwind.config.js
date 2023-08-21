@@ -33,7 +33,7 @@ export default {
                     writingMode: "vertical-lr",
                 },
             };
-            
+
             addUtilities(newUtilities);
         }),
     ],

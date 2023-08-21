@@ -2,6 +2,8 @@
     import TournamentsView from "$lib/components/staff-log/TournamentsView.svelte";
 
     export let data;
+
+    const { tournaments } = data;
 </script>
 
 <svelte:head>
@@ -28,7 +30,7 @@
             <div class="flex flex-col gap-4 justify-between items-start w-full mt-2 px-2">
                 <div class="w-full">
                     <div class="pt-12">
-                        <TournamentsView tournamentYears={data.tournaments} />
+                        <TournamentsView tournamentYears={tournaments} />
                     </div>
                 </div>
             </div>

@@ -6,6 +6,6 @@
 
 <ul class="transition-all duration-300">
     {#each tournamentYears as tournamentYear}
-        <TournamentYear tournamentYear={tournamentYear} />
+        <TournamentYear {tournamentYear} />
     {/each}
 </ul>

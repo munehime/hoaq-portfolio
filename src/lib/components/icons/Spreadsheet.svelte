@@ -1,10 +1,4 @@
-<svg
-    focusable="false"
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 500 500"
-    fill="none"
-    class={$$props.class}
->
+<svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" fill="none" class={$$props.class}>
     <g clip-path="url(#clip0_202_78)">
         <g clip-path="url(#clip1_202_78)">
             <path
