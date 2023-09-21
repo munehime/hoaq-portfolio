@@ -7,12 +7,14 @@
             name="keywords"
             content="osu, osu!, tournament, tournaments, tournament staff, tournaments staff, host, technician, mappooler, referee, streamer, commentator"
         />
-        <!--        <meta property="og:url" content="https://hoaq.id.vn" />-->
-        <meta property="og:image" content="/assets/images/common/icons/apple-touch-icon.png" />
+        %sveltekit.head%
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://hoaq.id.vn" />
+        <meta property="og:image" content="https://hoaq.id.vn/assets/images/common/icons/apple-touch-icon.png" />
         <meta name="twitter:card" content="summary" />
-        <meta name="twitter:image" content="/assets/images/common/icons/apple-touch-icon.png" />
+        <meta name="twitter:image" content="https://hoaq.id.vn/assets/images/common/icons/apple-touch-icon.png" />
         <meta name="msapplication-TileColor" content="#b179b4" />
-        <meta name="msapplication-config" content="/assets/images/common/icons/browserconfig.xml" />
+        <meta name="msapplication-config" content="https://hoaq.id.vn/assets/images/common/icons/browserconfig.xml" />
         <meta name="theme-color" content="#b179b4" />
         <link
             rel="apple-touch-icon"
@@ -38,7 +40,6 @@
             color="#b179b4"
         />
         <link rel="shortcut icon" href="%sveltekit.assets%/assets/images/common/icons/favicon.ico" />
-        %sveltekit.head%
     </head>
     <body data-sveltekit-preload-data="hover">
         <div id="root">%sveltekit.body%</div>
