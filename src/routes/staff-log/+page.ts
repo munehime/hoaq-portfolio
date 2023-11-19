@@ -12,3 +12,5 @@ export async function load({ fetch }: { fetch: any }) {
 }
 
 export const prerender = true;
+
+export const csr = true;
