@@ -1,7 +1,8 @@
 <script lang="ts">
     import TournamentsView from "$lib/components/staff-log/TournamentsView.svelte";
+    import type { PageData } from "./$types"
 
-    export let data;
+    export let data: PageData;
 
     const { tournaments } = data;
 </script>
