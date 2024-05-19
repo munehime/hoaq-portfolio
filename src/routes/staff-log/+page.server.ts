@@ -1,7 +1,7 @@
 import { getTournaments } from "$lib/server/tournaments";
 
 export async function load() {
-    const tournaments = await getTournaments({ groupBy: "year" })
+    const tournaments = await getTournaments({ groupBy: "year" });
 
     return tournaments;
 }
