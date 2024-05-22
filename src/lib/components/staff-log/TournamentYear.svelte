@@ -30,7 +30,7 @@
     </button>
     <div class={"overflow-hidden transition-all duration-200" + (isOpen ? "" : " hidden")}>
         <ul class="grid grid-cols-1 xl:grid-cols-2 min-[1625px]:grid-cols-3 gap-5 pt-4">
-            {#each tournamentYear.tournaments as tournament (tournament.acronym)}
+            {#each tournamentYear.tournaments as tournament, index (`${tournamentYear.year}-${index}`)}
                 <li>
                     <div
                         class="grid grid-cols-[28px_minmax(0,_1fr)_90px] sm:grid-cols-[28px_minmax(0,_1fr)_146px] bg-[#1e1e1e]"
