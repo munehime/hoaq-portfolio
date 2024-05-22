@@ -14,7 +14,8 @@
 
 @font-face {
     font-family: "Fira Mono";
-    src: url("/assets/fonts/FiraMono-Regular.ttf") format("truetype"),
+    src:
+        url("/assets/fonts/FiraMono-Regular.ttf") format("truetype"),
         url("/assets/fonts/FiraMono-Medium.ttf") format("truetype"),
         url("/assets/fonts/FiraMono-Bold.ttf") format("truetype");
     font-weight: 200 700;

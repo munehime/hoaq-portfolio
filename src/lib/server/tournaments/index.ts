@@ -20,14 +20,17 @@ function toBoolean(value: string): boolean {
 }
 
 function groupByKey<T>(data: Array<T>, key: keyof T): { [key: string]: Array<T> } {
-    return data.reduce((storage, item) => {
-        const group = item[key] as string;
+    return data.reduce(
+        (storage, item) => {
+            const group = item[key] as string;
 
-        storage[group] = storage[group] || [];
-        storage[group].push(item);
+            storage[group] = storage[group] || [];
+            storage[group].push(item);
 
-        return storage;
-    }, {} as { [key: string]: Array<T> });
+            return storage;
+        },
+        {} as { [key: string]: Array<T> },
+    );
 }
 
 const sheets = google.sheets({
@@ -113,7 +116,7 @@ export const getTournaments = async ({ groupBy }: { groupBy?: string }) => {
                 const tournamentsInYear = groupedTournaments[group];
                 const roles = tournamentsInYear.reduce(
                     (accumulator, currentTournament) => accumulator + currentTournament.roles.length,
-                    0
+                    0,
                 );
 
                 return {
