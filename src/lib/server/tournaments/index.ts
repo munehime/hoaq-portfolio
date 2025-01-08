@@ -105,8 +105,8 @@ export const getTournaments = async ({ groupBy }: { groupBy?: string }) => {
 
             tournaments.push(tournament);
         }
-    } catch (err) {
-        error(500, "Error when fetching data");
+    } catch (err: any) {
+        error(500, "Error when fetching data: " + err.message);
     }
 
     if (groupBy === "year") {
