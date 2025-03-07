@@ -42,36 +42,62 @@
             </div>
             <div class="mt-3 lg:mt-0 flex flex-col gap-4 justify-between items-start">
                 <div>
-                    <div class="px-3 py-1 text-4xl font-bold text-white">General info</div>
-                    <div class="px-3 py-1 text-lg text-[#bdc1c6]">
-                        Calling this commission is a bit of a joke, because none of these are worth being actual
-                        commissions. But still, for the sake of legitimacy, just take it as is.
-                    </div>
-                </div>
-                <div>
-                    <div class="px-3 py-1 text-4xl font-bold text-white">What can I do?</div>
-                    <div class="px-3 py-1 flex flex-col gap-4 text-lg text-[#bdc1c6]">
-                        <div>
-                            Mostly minimalist-style main sheets. Keep in mind that if you work with me, expect to see a
-                            full package of Hitomi’s backend sheet templates being used. I don’t plan on making my own
-                            sheets, since Hitomi v5 is pretty much what I want when those were made.
-                        </div>
-                        <div>
-                            As a bonus, I can even help setting up your server to be more tournament-focus with
-                            permissions and per-user verification with osu!.
-                        </div>
-                    </div>
-                </div>
-                <div>
                     <div class="px-3 py-1 text-4xl font-bold text-white">Pricing</div>
+                    <div class="px-3 py-1 text-lg text-[#bdc1c6]">
+                        <ul>
+                            <li><strong>Main sheet only:</strong> $3</li>
+                            <li><strong>Full package:</strong> <a class="italic">starting from</a> $10</li>
+                            <li><strong>Personal sheet (staff / player history):</strong> <a class="italic">starting from</a> $15</li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div class="px-3 py-1 text-4xl font-bold text-white">What's included?</div>
                     <div class="px-3 py-1 flex flex-col gap-4 text-lg text-[#bdc1c6]">
-                        <div>What pricing? Food? Consumable?</div>
                         <div>
-                            Jokes aside, there is <strong>no set price</strong> for my work. You can choose to pay me base
-                            of what you think my work is worth.
+                            <ul>
+                                <li><strong>Full package:</strong>
+                                <ul>
+                                    <li>Main sheet: Cover, Registration, Mappool, Qualifiers schedule & result, Bracket Schedule</li>
+                                    <li>Backend: Registration forms (player & staff), Management, Mappooling, Referee, weekly statistics</li>
+                                </ul>
+                                <li><strong>Personal sheet:</strong> Staffing <strong>OR</strong> playing history & accompanying input sheet.
+                                </li>
+                            </ul>
                         </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="px-3 py-1 text-4xl font-bold text-white">Extra</div>
+                    <div class="px-3 py-1 flex flex-col gap-4 text-lg text-[#bdc1c6]">
+                        <div class="px-3 py-1 text-lg text-[#bdc1c6] italic">warning: below are all DLCs, to be added to the package choice above</div>
                         <div>
-                            I’m doing all of this because I want to, not because I take this as an actual money-maker.
+                            <ul>
+                                <li><strong>Uncommon tournament format</strong> (Swiss / Round Robin / Single Elimination / ...): $5</li>
+                                <li><strong>Uncommon mappool format:</strong> $5</li>
+                                <li><strong>Other tournament gimmicks:</strong> DM for details</li>
+                                <li><strong>Staff listing on main sheet:</strong> $5</li>
+                                <li><strong>Full history sheet</strong> (both staff and player history): $10</li>
+                                <li><strong>Rush fee / Urgent request:</strong> $15</li>
+                                <li><strong>Major changes after finishing:</strong> $10</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="px-3 py-1 text-4xl font-bold text-white">Terms of Service</div>
+                    <div class="px-3 py-1 flex flex-col gap-4 text-lg text-[#bdc1c6]">
+                        <div>
+                            <ul>
+                                <li>I reserve the right to deny any requests.</li>
+                                <li>All requests must be made at minimum 2 weeks in advanced.</li>
+                                <li>Tournament GFX must be done at minimum 7 days prior to forum post release date.</li>
+                                <ul><li>If GFX are done 7 days prior, sheet pricing are also subjected to the <strong>rush fee.</strong></li></ul>
+                                <li>Final pricing might change even after confirmation, depends on the complexity of your request.</li>
+                                <li>No deposit azre required, but full payment must be made once the first draft is agreed upon by both parties.</li>
+                                <li>Major changes to sheet design after finishing the final draft are subjected to extra fee mentioned above.</li>
+                                <li>All payments must be made via PayPal and are <strong>NON-REFUNDABLE.</strong></li>
+                            </ul>
                         </div>
                     </div>
                 </div>

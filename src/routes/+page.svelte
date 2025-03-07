@@ -1,7 +1,7 @@
 <script lang="ts">
     const links: Array<{ title: string; path: string }> = [
         { title: "me!", path: "/me" },
-        // { title: "commissions", path: "/commissions" },
+        { title: "commissions", path: "/commissions" },
         { title: "staff log", path: "/staff-log" },
     ];
 </script>
