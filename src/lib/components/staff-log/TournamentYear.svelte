@@ -2,9 +2,9 @@
     import Icon from "@iconify/svelte";
     import triangleFillIcon from "@iconify-icons/mingcute/triangle-fill";
     import userIcon from "@iconify-icons/mdi/user";
-    import OsuIcon from "$lib/components/icons/OsuIcon.svelte";
-    import SpreadsheetIcon from "$lib/components/icons/Spreadsheet.svelte";
-    import BadgeIcon from "$lib/components/icons/Bagde.svelte";
+    import badgeIcon from "@iconify-icons/simple-line-icons/badge";
+    import osuIcon from "@iconify-icons/simple-icons/osu";
+    import spreadsheetIcon from "@iconify-icons/mdi/spreadsheet";
 
     const { tournamentYear } = $props();
 
@@ -21,13 +21,13 @@
             onclick={handleOnClick}>
         <div class="flex items-center gap-3 text-left">
             <div class={"flex items-center transition-all duration-200 " + (!isOpen ? "rotate-90" : "rotate-180")}>
-                <Icon icon={triangleFillIcon} class="text-base text-white" />
+                <Icon icon={triangleFillIcon} class="min-w-4 text-base text-white" />
             </div>
             <div class="font-bold text-lg">
                 {tournamentYear.year}
             </div>
         </div>
-        <div class="text-lg text-right">
+        <div class="ml-3 text-lg text-right">
             <span class="font-bold italic">{tournamentYear.statistics.roles}</span>&#x0020;roles
             in&#x0020;<span class="font-bold italic">{tournamentYear.statistics.tournaments}</span>&#x0020;tournaments
         </div>
@@ -37,7 +37,7 @@
             {#each tournamentYear.tournaments as tournament, index (`${tournamentYear.year}-${index}`)}
                 <li>
                     <div
-                        class="grid grid-cols-[28px_minmax(0,_1fr)_90px] sm:grid-cols-[28px_minmax(0,_1fr)_146px] bg-[#1e1e1e]"
+                        class="grid grid-cols-[28px_minmax(0,_1fr)] md:grid-cols-[28px_minmax(0,_1fr)_150px] bg-[#1e1e1e]"
                     >
                         <div
                             class={"relative rotate-180 h-full pl-0.5" +
@@ -58,6 +58,50 @@
                                 <div class="text-[#bdc1c6] text-sm">
                                     {tournament.acronym}
                                 </div>
+                                <div class="block md:hidden mt-1.5 py-1">
+                                    <ul class="flex justify-between h-full select-none">
+                                        <li>
+                                            {#if tournament.badge_url !== "none" && tournament.badge_url !== "pending"}
+                                                <a href={tournament.badge_url} target="_blank"
+                                                   rel="noopener noreferrer">
+                                                    <div class="flex items-center gap-1.5 px-1 py-0.5">
+                                                        <Icon icon={badgeIcon} class="text-xl fill-white" />
+                                                        <div class="text-xs break-words">Badged</div>
+                                                    </div>
+                                                </a>
+                                            {:else}
+                                                <div class="flex items-center gap-1.5 px-1 py-0.5">
+                                                    <Icon icon={badgeIcon} class="text-xl sm:text-2xl fill-white" />
+                                                    {#if tournament.badge_url === "none"}
+                                                        <div class="text-xs break-words">No Badge</div>
+                                                    {:else}
+                                                        <div class="text-xs break-words">Badge Pending</div>
+                                                    {/if}
+                                                </div>
+                                            {/if}
+                                        </li>
+                                        <li>
+                                            <a href={tournament.forum_post} target="_blank" rel="noopener noreferrer">
+                                                <div class="flex items-center gap-1.5 px-1 py-0.5">
+                                                    <Icon icon={osuIcon} class="text-xl fill-white" />
+                                                    <div class="text-xs break-words">Forum Post</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        {#if tournament.sheet_link?.length > 0}
+                                            <li>
+                                                <a href={tournament.sheet_link} target="_blank"
+                                                   rel="noopener noreferrer">
+                                                    <div class="flex items-center gap-1.5 px-1 py-0.5">
+                                                        <Icon icon={spreadsheetIcon}
+                                                              class="text-xl fill-white" />
+                                                        <div class="text-xs break-all">Spreadsheet</div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        {/if}
+                                    </ul>
+                                </div>
                             </div>
                             <div class="flex flex-col pt-1">
                                 <div class="flex items-center font-bold text-sm">
@@ -69,23 +113,23 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="p-2">
+                        <div class="hidden md:block p-2">
                             <ul class="flex flex-col justify-around h-full select-none">
                                 <li>
                                     {#if tournament.badge_url !== "none" && tournament.badge_url !== "pending"}
                                         <a href={tournament.badge_url} target="_blank" rel="noopener noreferrer">
                                             <div class="flex items-center gap-1.5 px-1 py-0.5">
-                                                <BadgeIcon class="w-3 sm:w-5 h-3 sm:h-5 fill-white" />
+                                                <Icon icon={badgeIcon} class="text-2xl fill-white" />
                                                 <div class="text-xs sm:text-sm break-words">Badged</div>
                                             </div>
                                         </a>
                                     {:else}
                                         <div class="flex items-center gap-1.5 px-1 py-0.5">
-                                            <BadgeIcon class="w-3 sm:w-5 h-3 sm:h-5 fill-white" />
+                                            <Icon icon={badgeIcon} class="text-2xl fill-white" />
                                             {#if tournament.badge_url === "none"}
-                                                <div class="text-xs sm:text-sm break-words">No Badge</div>
+                                                <div class="text-sm break-words">No Badge</div>
                                             {:else}
-                                                <div class="text-xs sm:text-sm break-words">Badge Pending</div>
+                                                <div class="text-sm break-words">Badge Pending</div>
                                             {/if}
                                         </div>
                                     {/if}
@@ -93,8 +137,8 @@
                                 <li>
                                     <a href={tournament.forum_post} target="_blank" rel="noopener noreferrer">
                                         <div class="flex items-center gap-1.5 px-1 py-0.5">
-                                            <OsuIcon class="w-3 sm:w-5 h-3 sm:h-5 fill-white" />
-                                            <div class="text-xs sm:text-sm break-words">Forum Post</div>
+                                            <Icon icon={osuIcon} class="text-2xl fill-white" />
+                                            <div class="text-sm break-words">Forum Post</div>
                                         </div>
                                     </a>
                                 </li>
@@ -102,8 +146,8 @@
                                     <li>
                                         <a href={tournament.sheet_link} target="_blank" rel="noopener noreferrer">
                                             <div class="flex items-center gap-1.5 px-1 py-0.5">
-                                                <SpreadsheetIcon class="w-2 sm:w-5 h-2 sm:h-5 fill-white" />
-                                                <div class="text-xs sm:text-sm break-all">Spreadsheet</div>
+                                                <Icon icon={spreadsheetIcon} class="text-2xl fill-white" />
+                                                <div class="text-sm break-all">Spreadsheet</div>
                                             </div>
                                         </a>
                                     </li>
