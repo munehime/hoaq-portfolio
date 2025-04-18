@@ -32,8 +32,7 @@
             in&#x0020;<span class="font-bold italic">{tournamentYear.statistics.tournaments}</span>&#x0020;tournaments
         </div>
     </button>
-<!--    <div class={"overflow-hidden transition-all duration-200" + (isOpen ? "" : " hidden")}>-->
-    <div class="overflow-hidden">
+    <div class={"overflow-hidden transition-all duration-200" + (isOpen ? "" : " hidden")}>
         <ul class="grid grid-cols-1 xl:grid-cols-2 min-[1625px]:grid-cols-3 gap-5 pt-4">
             {#each tournamentYear.tournaments as tournament, index (`${tournamentYear.year}-${index}`)}
                 <li>
