@@ -1,19 +1,9 @@
 import { error } from "@sveltejs/kit";
 import { GOOGLE_API_KEY } from "$env/static/private";
 import { google } from "googleapis";
+import type { Tournament } from "$lib/types/sheets";
 
 const SPREADSHEET_ID = "1oLguj4B8Jo5dluiNd4CrSPKj5Uugo3lgGsuT8cn1ZE0";
-
-interface Tournament {
-    year: number;
-    name: string;
-    acronym: string;
-    forum_post: string;
-    sheet_link: string;
-    badge_url: string;
-    roles: Array<string>;
-    status: string;
-}
 
 function toBoolean(value: string): boolean {
     return value.toLowerCase() === "true";

@@ -28,13 +28,13 @@
     <meta property="twitter:description" content="Hi, I'm Hoaq" />
 </svelte:head>
 
-<main>
+<main class="flex-1">
     <div class="flex flex-col min-h-screen justify-center items-center px-12 sm:px-24 py-20">
         <div class="w-full max-w-7xl grid grid-cols-1 lg:grid-cols-2 justify-between items-start">
             <div class="flex flex-col gap-4 justify-between items-between lg:items-start">
                 <div>
                     <div class="px-3 py-1 text-4xl font-bold text-white">Recent works</div>
-                    <div class="px-3 py-1 text-lg text-[#bdc1c6] italic">
+                    <div class="px-3 py-1 text-lg italic">
                         Click on the image to go to the corresponding sheet
                     </div>
                 </div>
@@ -43,7 +43,7 @@
             <div class="mt-3 lg:mt-0 flex flex-col gap-4 justify-between items-start">
                 <div>
                     <div class="px-3 py-1 text-4xl font-bold text-white">Pricing</div>
-                    <div class="ml-6 px-3 py-1 text-lg text-[#bdc1c6]">
+                    <div class="ml-6 px-3 py-1 text-lg">
                         <ul class="list-disc">
                             <li><strong>Main sheet only:</strong> $3</li>
                             <li><strong>Full package:</strong> <a class="italic">starting from</a> $10</li>
@@ -55,7 +55,7 @@
                 </div>
                 <div>
                     <div class="px-3 py-1 text-4xl font-bold text-white">What's included?</div>
-                    <div class="ml-6 px-3 py-1 flex flex-col gap-4 text-lg text-[#bdc1c6]">
+                    <div class="ml-6 px-3 py-1 flex flex-col gap-4 text-lg">
                         <div>
                             <ul class="list-disc">
                                 <li><strong>Full package:</strong>
@@ -76,10 +76,10 @@
                 </div>
                 <div>
                     <div class="px-3 py-1 text-4xl font-bold text-white">Extra</div>
-                    <div class="px-3 py-1 text-lg text-[#bdc1c6] italic">warning: below are all DLCs, to be added to
+                    <div class="px-3 py-1 text-lg italic">warning: below are all DLCs, to be added to
                         the package choice above
                     </div>
-                    <div class="ml-6 px-3 py-1 flex flex-col gap-4 text-lg text-[#bdc1c6]">
+                    <div class="ml-6 px-3 py-1 flex flex-col gap-4 text-lg">
                         <div>
                             <ul class="list-disc">
                                 <li><strong>Uncommon tournament format</strong> (Swiss / Round Robin / Single
@@ -97,7 +97,7 @@
                 </div>
                 <div>
                     <div class="px-3 py-1 text-4xl font-bold text-white">Terms of Service</div>
-                    <div class="ml-6 px-3 py-1 flex flex-col gap-4 text-lg text-[#bdc1c6]">
+                    <div class="ml-6 px-3 py-1 flex flex-col gap-4 text-lg">
                         <div>
                             <ul class="list-disc">
                                 <li>I reserve the right to deny any requests.</li>

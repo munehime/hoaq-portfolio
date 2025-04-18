@@ -2,8 +2,7 @@
     import TournamentsView from "$lib/components/staff-log/TournamentsView.svelte";
     import type { PageData } from "./$types";
 
-    export let data: PageData;
-
+    const { data }: { data: PageData } = $props();
     const { tournaments } = data;
 </script>
 
@@ -17,13 +16,13 @@
     <meta property="twitter:description" content="Hi, I'm Hoaq" />
 </svelte:head>
 
-<main>
+<main class="flex-1">
     <div class="flex flex-col min-h-screen justify-center items-center px-12 sm:px-24 py-20">
         <div class="w-full max-w-[1625px] flex flex-col justify-between items-start">
             <div class="flex flex-col gap-4 justify-between items-start">
                 <div>
                     <div class="px-3 py-1 text-4xl font-bold text-white">Staff log</div>
-                    <div class="px-3 py-1 text-xl text-[#bdc1c6]">
+                    <div class="px-3 py-1 text-xl">
                         Tracker of everything I’ve done as a tournament staff
                     </div>
                 </div>

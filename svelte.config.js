@@ -5,11 +5,9 @@ import { vitePreprocess } from "@sveltejs/vite-plugin-svelte";
 const config = {
     extensions: [".svelte"],
     kit: {
-        adapter: adapter({
-            runtime: "nodejs20.x",
-        }),
+        adapter: adapter(),
     },
-    preprocess: vitePreprocess(),
+    preprocess: [vitePreprocess()],
 };
 
 export default config;

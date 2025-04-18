@@ -1,11 +1,5 @@
-import { getTournaments } from "$lib/server/tournaments";
+import { getTournaments } from "$lib/server/sheets";
 
 export async function load() {
-    const tournaments = await getTournaments({ groupBy: "year" });
-
-    return tournaments;
+    return await getTournaments({ groupBy: "year" });
 }
-
-export const prerender = false;
-
-export const csr = true;

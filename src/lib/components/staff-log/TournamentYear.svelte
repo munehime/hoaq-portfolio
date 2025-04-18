@@ -1,34 +1,39 @@
 <script lang="ts">
-    import { FontAwesomeIcon } from "@fortawesome/svelte-fontawesome";
-    import { faPlay, faUser } from "@fortawesome/free-solid-svg-icons";
+    import Icon from "@iconify/svelte";
+    import triangleFillIcon from "@iconify-icons/mingcute/triangle-fill";
+    import userIcon from "@iconify-icons/mdi/user";
     import OsuIcon from "$lib/components/icons/OsuIcon.svelte";
     import SpreadsheetIcon from "$lib/components/icons/Spreadsheet.svelte";
     import BadgeIcon from "$lib/components/icons/Bagde.svelte";
 
-    export let tournamentYear;
+    const { tournamentYear } = $props();
 
-    let isOpen = false;
+    let isOpen = $state(false);
 
-    function handleOnClick() {
+    function handleOnClick(event: MouseEvent) {
+        event.preventDefault();
         isOpen = !isOpen;
     }
 </script>
 
 <div class="py-4">
-    <button class="flex justify-between w-full pb-2 border-b-4 border-b-[#bdc1c6]" on:click={handleOnClick}>
+    <button class="flex justify-between w-full pb-2 border-b-4 border-b-[#bdc1c6]" type="button"
+            onclick={handleOnClick}>
         <div class="flex items-center gap-3 text-left">
-            <div class={"flex items-center transition-all duration-200 " + (isOpen ? "rotate-90" : "rotate-0")}>
-                <FontAwesomeIcon icon={faPlay} class="w-3 h-3 text-white" />
+            <div class={"flex items-center transition-all duration-200 " + (!isOpen ? "rotate-90" : "rotate-180")}>
+                <Icon icon={triangleFillIcon} class="text-base text-white" />
             </div>
             <div class="font-bold text-lg">
                 {tournamentYear.year}
             </div>
         </div>
         <div class="text-lg text-right">
-            {`${tournamentYear.statistics.roles} roles in ${tournamentYear.statistics.tournaments} tournaments`}
+            <span class="font-bold italic">{tournamentYear.statistics.roles}</span>&#x0020;roles
+            in&#x0020;<span class="font-bold italic">{tournamentYear.statistics.tournaments}</span>&#x0020;tournaments
         </div>
     </button>
-    <div class={"overflow-hidden transition-all duration-200" + (isOpen ? "" : " hidden")}>
+<!--    <div class={"overflow-hidden transition-all duration-200" + (isOpen ? "" : " hidden")}>-->
+    <div class="overflow-hidden">
         <ul class="grid grid-cols-1 xl:grid-cols-2 min-[1625px]:grid-cols-3 gap-5 pt-4">
             {#each tournamentYear.tournaments as tournament, index (`${tournamentYear.year}-${index}`)}
                 <li>
@@ -56,9 +61,9 @@
                                 </div>
                             </div>
                             <div class="flex flex-col pt-1">
-                                <div class="font-bold text-sm">
-                                    <FontAwesomeIcon icon={faUser} class="h-3 w-3 text-white" />
-                                    <span>Role(s)</span>
+                                <div class="flex items-center font-bold text-sm">
+                                    <Icon icon={userIcon} class="text-base text-white" />
+                                    <span class="ml-0.5">Role(s)</span>
                                 </div>
                                 <div class="text-[#bdc1c6] text-sm">
                                     {tournament.roles.join(", ")}

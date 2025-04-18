@@ -1,0 +1,125 @@
+@layer base {
+    html {
+        height: 100%;
+        scroll-behavior: smooth;
+        -webkit-text-size-adjust: 100%;
+        font-size: 100%;
+        color-scheme: dark light;
+    }
+
+    body {
+        min-height: 100vh;
+        line-height: 1.5;
+        text-rendering: optimizeSpeed;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    ul,
+    ol {
+        list-style: none;
+    }
+
+    img,
+    picture,
+    svg,
+    video,
+    canvas {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+
+    iframe {
+        max-width: 100%;
+        border: 0;
+    }
+
+    input,
+    button,
+    textarea,
+    select {
+        font: inherit;
+        color: inherit;
+        letter-spacing: inherit;
+    }
+
+    button,
+    [role="button"] {
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+        -webkit-tap-highlight-color: transparent;
+        touch-action: manipulation;
+        -webkit-appearance: none;
+        appearance: none;
+    }
+
+    [type="search"],
+    [type="text"],
+    [type="email"],
+    [type="url"],
+    [type="password"],
+    [type="number"],
+    [type="date"],
+    [type="datetime-local"],
+    [type="month"],
+    [type="tel"],
+    [type="time"],
+    [type="week"],
+    textarea,
+    select {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 100%;
+        border: none;
+        border-radius: 0;
+        background-color: transparent;
+    }
+
+    [type="checkbox"],
+    [type="radio"] {
+        -webkit-appearance: none;
+        appearance: none;
+        display: inline-block;
+        vertical-align: middle;
+        border: none;
+        background-color: transparent;
+    }
+
+    textarea {
+        vertical-align: top;
+        overflow: auto;
+    }
+
+    ::placeholder,
+    ::-moz-placeholder {
+        opacity: 1;
+    }
+
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        width: 100%;
+    }
+
+    abbr[title] {
+        border-bottom: none;
+        text-decoration: underline;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        html:focus-within {
+            scroll-behavior: auto;
+        }
+
+        *,
+        *::before,
+        *::after {
+            animation-duration: 0.01ms !important;
+            animation-iteration-count: 1 !important;
+            transition-duration: 0.01ms !important;
+            scroll-behavior: auto !important;
+        }
+    }
+}
