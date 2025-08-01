@@ -2,6 +2,7 @@
     const links: Array<{ title: string; path: string }> = [
         { title: "me!", path: "/me" },
         { title: "commissions", path: "/commissions" },
+        { title: "tos", path: "/tos" },
         { title: "staff log", path: "/staff-log" }
     ];
 </script>
