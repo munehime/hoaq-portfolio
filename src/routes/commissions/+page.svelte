@@ -30,23 +30,15 @@
 
 <main class="flex-1">
     <div class="flex flex-col min-h-screen justify-center items-center px-12 sm:px-24 py-20">
-        <div class="w-full max-w-7xl grid grid-cols-1 lg:grid-cols-2 justify-between items-start">
-            <div class="flex flex-col gap-4 justify-between items-between lg:items-start">
-                <div>
-                    <div class="px-3 py-1 text-4xl font-bold text-white">Recent works</div>
-                    <div class="px-3 py-1 text-lg italic">
-                        Click on the image to go to the corresponding sheet
-                    </div>
-                </div>
-                <div class="w-full px-4" />
-            </div>
+        <div class="w-[800px] max-w-7xl justify-center items-center">
             <div class="mt-3 lg:mt-0 flex flex-col gap-4 justify-between items-start">
                 <div>
+                    <div class="px-3 py-1 text-lg italic">to see my list of previous and current works tracker, <a class="font-bold" href="https://trello.com/b/MzWWWCqY/hoaqs-spreadsheet-log" target="_blank">click here</a>!</div>
                     <div class="px-3 py-1 text-4xl font-bold text-white">Pricing</div>
                     <div class="ml-6 px-3 py-1 text-lg">
                         <ul class="list-disc">
-                            <li><strong>Main sheet only:</strong> $3</li>
-                            <li><strong>Full package:</strong> <a class="italic">starting from</a> $10</li>
+                            <li><strong>Main sheet only:</strong> $5</li>
+                            <li><strong>Full package:</strong> <a class="italic">starting from</a> $15</li>
                             <li><strong>Personal sheet (staff / player history):</strong> <a class="italic">starting
                                 from</a> $15
                             </li>
@@ -58,16 +50,17 @@
                     <div class="ml-6 px-3 py-1 flex flex-col gap-4 text-lg">
                         <div>
                             <ul class="list-disc">
+                                <li><strong>Main sheet:</strong> Cover, Registration (team <b>or</b> player), Mappool, Qualifiers Schedule & result,
+                                            Bracket Schedule</li>
                                 <li><strong>Full package:</strong>
                                     <ul class="pl-6 list-[square]">
-                                        <li>Main sheet: Cover, Registration, Mappool, Qualifiers schedule & result,
-                                            Bracket Schedule
+                                        <li>Main sheet: same as above
                                         </li>
-                                        <li>Backend: Registration forms (player & staff), Management, Mappooling,
+                                        <li>Backend: Registration forms (team <b>or</b> player & staff), Management, Mappooling,
                                             Referee, weekly statistics
                                         </li>
                                     </ul>
-                                <li><strong>Personal sheet:</strong> Staffing <strong>OR</strong> playing history &
+                                <li><strong>Personal sheet:</strong> Staffing <b>or</b> playing history &
                                     accompanying input sheet.
                                 </li>
                             </ul>
@@ -82,47 +75,21 @@
                     <div class="ml-6 px-3 py-1 flex flex-col gap-4 text-lg">
                         <div>
                             <ul class="list-disc">
+                                <li><strong>Staff listing on main sheet:</strong> $5</li>
+                                <li><strong>Both team and FA registration:</strong> $5</li>
                                 <li><strong>Uncommon tournament format</strong> (Swiss / Round Robin / Single
                                     Elimination / ...): $5
                                 </li>
                                 <li><strong>Uncommon mappool format:</strong> $5</li>
                                 <li><strong>Other tournament gimmicks:</strong> DM for details</li>
-                                <li><strong>Staff listing on main sheet:</strong> $5</li>
                                 <li><strong>Full history sheet</strong> (both staff and player history): $10</li>
-                                <li><strong>Rush fee / Urgent request:</strong> $15</li>
+                                <li><strong>Rush fee:</strong> $15</li>
                                 <li><strong>Major changes after finishing:</strong> $10</li>
                             </ul>
                         </div>
                     </div>
                 </div>
                 <div>
-                    <div class="px-3 py-1 text-4xl font-bold text-white">Terms of Service</div>
-                    <div class="ml-6 px-3 py-1 flex flex-col gap-4 text-lg">
-                        <div>
-                            <ul class="list-disc">
-                                <li>I reserve the right to deny any requests.</li>
-                                <li>All requests must be made at minimum 2 weeks in advanced.</li>
-                                <li>
-                                    Tournament GFX must be done at minimum 7 days prior to forum post release date.
-                                    <div>
-                                        If GFX are done 7 days prior, sheet pricing are also subjected to the <strong>rush
-                                        fee.</strong>
-                                    </div>
-                                </li>
-                                <li>Final pricing might change even after confirmation, depends on the complexity of
-                                    your request.
-                                </li>
-                                <li>No deposit azre required, but full payment must be made once the first draft is
-                                    agreed upon by both parties.
-                                </li>
-                                <li>Major changes to sheet design after finishing the final draft are subjected to extra
-                                    fee mentioned above.
-                                </li>
-                                <li>All payments must be made via PayPal and are <strong>NON-REFUNDABLE.</strong></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </div>

@@ -66,7 +66,7 @@
                         </div>
                     </div>
                     <div class="text-xl text-center font-mono">
-                        NM1 enjoyer / avid tournament staff
+                        25, he-him, vi/en
                     </div>
                     <div class="">
                         <ul class="flex gap-7 justify-center items-center w-full">
@@ -104,24 +104,13 @@
                         <div>
                             A jack-of-all-trade type of staff. You can find me in pretty much every staff role of a
                             tournament, with the exclusion of designing. I was mainly a referee from 2018 to 2020 and
-                            slowly trainsitioned to my current favourite role - Streamer (sometimes Commentator). My
-                            standout contribution to this role can be seen in <i>3 Digits World Cup</i>,
-                            <i>Charlie’s Perfect Math Class</i>,
-                            <i>The Perennial</i>,
-                            <i>Australia & New Zealand Tournament</i> and many more.
+                            slowly trainsitioned to Streamer role when I finally got a decent PC. Lately, you might know me as one of the organizers for <b>Resurrection Cup</b> and <b>Aim Cup</b>.
                         </div>
                         <div>
-                            Since 2021, I’ve been experimenting with making spreadsheets for tournaments. Though I might
-                            not be as good as other well-known sheeters, I’m still confident in my sheeting style -
-                            minimal but informative.
+                            Since 2021, I’ve been experimenting with making spreadsheets for tournaments. Unlike other sheeters, you can find me designing some of the more sensible spreadsheets - minimal and informative.
                         </div>
                         <div>
-                            Other than staffing for international tournaments, you can also find me hosting most of
-                            Vietnam’s mainstream tournaments like <i>Vietnam osu! Championship</i>
-                            or
-                            <i>osu! No Name Tournament</i>, under the provision of Vietnam Community League (think of it
-                            as
-                            <i>Corsace</i>, but for the Vietnamese community only).
+                            Other than staffing for international tournaments, you might also know me as the host of <b>Vietnam osu! Championship</b>, under the provision of <a class="italic">Vietnam Community League</a> (it's like <a class="italic">Corsace</a>, but for focused on the Vietnamese player-base).
                         </div>
                     </div>
                 </div>
